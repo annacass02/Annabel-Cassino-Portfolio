@@ -21,6 +21,18 @@
   <meta property="og:url" content="https://annacass02.github.io/Annabel-Cassino-Portfolio/contattami.html" />
   <meta property="og:type" content="website" />
 
+<!--Emailjs-->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "nGhbXl_xP8xqei1IA",
+        });
+    })();
+</script>
+<script src="script.js"></script>
 </head>
 <body>
 
@@ -67,7 +79,7 @@
   <h2 class="text-center mb-4">Contattami</h2>
   
   <div class="form-container">
-  <form id="contact-form">
+  <form id="contact-form" onsubmit="sendMail(event)">
     <div class="mb-3">
       <label for="nome" class="form-label">Nome</label>
       <input type="text" class="form-control" id="nome" name="nome" required>
@@ -150,6 +162,6 @@
   </div>
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
