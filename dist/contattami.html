@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annabel Cassino | Graphic & UX/UI Designer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon\favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/613e8c534c.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/scss/main.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="/assets/svg/Annabel Cassino logo.svg" alt="Logo Annabel Cassino" />
+      </a>
+    </div>
+
+<input type="checkbox" id="menu-toggle" />
+<label for="menu-toggle" class="hamburger">
+  <i class="fa-solid fa-bars"></i>
+</label>
+
+<!-- Overlay per chiudere il menu cliccando fuori -->
+<label for="menu-toggle" class="overlay"></label>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="progetti.html">Progetti</a></li>
+      </ul>
+    </nav>
+
+    <div class="cta-button desktop-only">
+      <a href="contattami.html" class="btn-primary">Contattami</a>
+    </div>
+
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="progetti.html">Progetti</a></li>
+      </ul>
+      <a href="contattami.html" class="btn-primary">Contattami</a>
+    </div>
+  </div>
+</header>
+
+  <section class="contact-section container py-5">
+  <h2 class="text-center mb-4">Contattami</h2>
+  
+  <div class="form-container">
+  <form id="contact-form">
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome" name="nome" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="cognome" class="form-label">Cognome</label>
+      <input type="text" class="form-control" id="cognome" name="cognome" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="messaggio" class="form-label">Messaggio</label>
+      <textarea class="form-control" id="messaggio" name="messaggio" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary">Invia messaggio</button>
+  </form>
+
+  <div id="form-message" class="mt-3"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Colonna 1: Logo -->
+    <div class="footer-col logo-col">
+      <img src="/assets/svg/Annabel logo 2.svg" alt="Logo Annabel Cassino" />
+    </div>
+
+    <!-- Colonna 2: Navigazione -->
+    <div class="footer-col">
+      <p>Portfolio</p>
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Progetti</a>
+      </nav>
+    </div>
+
+    <!-- Colonna 3: Social -->
+    <div class="footer-col">
+      <p>Seguimi su</p>
+      <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/annabel-cassino-491855232" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://www.behance.net/annabelcassino" target="_blank">
+      <i class="fa-brands fa-square-behance"></i>
+    </a>
+    <a href="https://github.com/annacass02" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="http://dribbble.com/AnnabelCassino" target="_blank">
+      <i class="fa-brands fa-dribbble"></i>
+    </a>
+      </div>
+    </div>
+
+    <!-- Colonna 4: Contattami -->
+    <div class="footer-col">
+      <a href="contattami.html"><button class="btn-contattami">Contattami</button></a>
+    </div>
+
+    <!-- Colonna 5: Back to Top -->
+    <div class="footer-col back-to-top">
+      <a href="#top" class="circle-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Crediti -->
+  <div class="footer-bottom">
+    <p class="p-s">Developed & designed by Annabel Cassino © 2025</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

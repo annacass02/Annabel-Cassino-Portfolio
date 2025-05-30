@@ -1,0 +1,26 @@
+.contact-section {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+  width: 80%;
+}
+
+
+
+}
+.contact-section {
+  .form-container {
+    form {
+      /* default block layout */
+
+      button.btn-primary {
+        display: block;
+        margin: 20px auto 0 auto;  /* margine sopra + centratura orizzontale */
+        padding: 10px 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}

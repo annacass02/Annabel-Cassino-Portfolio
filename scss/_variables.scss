@@ -1,0 +1,195 @@
+$primary-color: #FF6400;
+$primary-color-hover: #E65A00;
+$primary-color-active: #CC5000;
+$secondary-color: #0D0D0D;
+$secondary-color-hover: #393939;
+$secondary-color-active: #676767;
+$accent-color: #FFE8D9;
+$white-color: #fff;
+
+/* Typography Desktop*/
+$font-size-h1: 3.815rem;   // 61px
+$font-size-h2: 3.052rem;  // 49px
+$font-size-h3: 2.441rem;    // 39px
+$font-size-h4: 1.953rem;  // 31px
+$font-size-h5: 1.562rem;   // 25px
+
+/* Typography Mobile*/
+$font-size-h1m: 3.052rem;  // 49px
+$font-size-h2m: 2.441rem;    // 39px
+$font-size-h3m: 1.953rem;  // 31px
+$font-size-h4m: 1.562rem;   // 25px
+
+/* Typography Body/Paragrafo*/
+$font-size-p: 1.250rem;    // 20px
+$font-size-p-m: 1rem;     // 16px
+$font-size-p-s: 0.800rem;    // 13px
+$font-size-p-x: 0.640rem;    // 10px
+
+// Font weights
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+/* DESKTOP*/
+
+h1{
+    font-size: $font-size-h1;
+    font-weight: $font-weight-bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2{
+    font-size: $font-size-h2;
+    font-weight: $font-weight-bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+h3{
+    font-size: $font-size-h3;
+    font-weight: $font-weight-bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+h4{
+    font-size: $font-size-h4;
+    font-weight: $font-weight-bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+h5{
+    font-size: $font-size-h5;
+    font-weight: $font-weight-bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* MOBILE*/
+
+.h1-mobile{
+    font-size: $font-size-h1m;
+    font-weight: $font-weight-bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+.h2-mobile{
+    font-size: $font-size-h2m;
+    font-weight: $font-weight-bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+.h3-mobile{
+    font-size: $font-size-h3m;
+    font-weight: $font-weight-bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+.h4-mobile{
+    font-size: $font-size-h4m;
+    font-weight: $font-weight-bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* BODY*/
+
+p{
+    font-size: $font-size-p;
+    font-weight: $font-weight-regular;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+
+}
+
+.p-m{
+    font-size: $font-size-p-m;
+    font-weight: $font-weight-regular;
+    font-family: "Montserrat", sans-serif;
+}
+
+.p-s{
+    font-size: $font-size-p-s;
+    font-weight: $font-weight-regular;
+    font-family: "Montserrat", sans-serif;
+}
+
+.p-x{
+    font-size: $font-size-p-x;
+    font-weight: $font-weight-regular;
+    font-family: "Montserrat", sans-serif;
+}
+
+// Colori per i bottoni
+$btn-bg-primary: $primary-color;
+$btn-hover-primary: $primary-color-hover;
+$btn-active-primary: $primary-color-active;
+
+$btn-bg-secondary: $secondary-color;
+$btn-hover-secondary: $secondary-color-hover;
+$btn-active-secondary: $secondary-color-active;
+
+
+$btn-color: $white-color;
+$btn-padding: 1rem 2rem;
+$btn-border-radius: 30px;
+$btn-font-weight: 700;
+$btn-transition: background-color 0.3s ease;
+
+@mixin button-style($bg-color, $hover-color, $active-color) {
+  background-color: $bg-color;
+  color: $btn-color;
+  padding: $btn-padding;
+  border: none;
+  border-radius: $btn-border-radius;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-p;
+  cursor: pointer;
+  transition: $btn-transition;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $hover-color;
+    color: $white-color;
+  }
+  
+  &:active {
+    background-color: $active-color;
+    color: $white-color;
+  }
+}
+
+
+.btn-primary {
+  @include button-style($btn-bg-primary, $btn-hover-primary, $btn-active-primary);
+}
+
+.btn-secondary {
+  @include button-style($btn-bg-secondary, $btn-hover-secondary, $btn-active-secondary);
+}
+
+.btn-terziary {
+  background-color: $white-color;
+  color: $primary-color;
+  padding: $btn-padding;
+  border: 2px solid $primary-color; // bordo visibile
+  border-radius: $btn-border-radius;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-p;
+  cursor: pointer;
+  transition: $btn-transition;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #FFF0E6;
+    color: $primary-color;
+  }
+
+  &:active {
+    background-color: #FFCFB0;
+    color: $primary-color;
+  }
+}

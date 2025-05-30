@@ -1,0 +1,293 @@
+@import "./variables";
+@import "./contattami";
+@import "./index";
+@import "./about";
+@import "./progetti";
+
+body{
+    background-color: $white-color;
+}
+
+/* Header */
+.main-header {
+  position: sticky;
+  top: 0;
+  background-color: $white-color;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1000;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .logo img {
+    height: 40px;
+    padding: 0 3.555rem;
+
+    @media (max-width: 768px) {
+      height: 30px;
+      padding: 0;
+    }
+  }
+
+  .nav-links ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li a {
+      text-decoration: none;
+      color: $secondary-color;
+      font-weight: 500;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+
+  /* Hamburger icon */
+  #menu-toggle {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 1.8rem;
+    color: $secondary-color;
+    cursor: pointer;
+  }
+
+  /* Mobile menu */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 75%;
+    max-width: 300px;
+    background-color: $white-color;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      li a {
+        text-decoration: none;
+        color: $secondary-color;
+        font-size: 1.2rem;
+        font-weight: 500;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+
+  }
+
+  // Attiva il menu mobile al check
+  #menu-toggle:checked ~ .mobile-menu {
+    transform: translateX(0);
+  }
+
+  /* Responsive rules */
+  @media (max-width: 768px) {
+    .nav-links,
+    .cta-button.desktop-only {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+}
+
+/* Overlay che copre tutta la pagina solo quando il menu è aperto */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 998;
+  cursor: pointer;
+}
+
+/* Quando il checkbox è attivo, mostra overlay */
+#menu-toggle:checked ~ .overlay {
+  display: block;
+}
+
+
+
+
+
+/* Footer */
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 6rem 6rem 1rem 6rem;
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .footer-col {
+      flex: 1;
+      min-width: 150px;
+
+      p {
+        margin-bottom: 1rem;
+        font-weight: $font-weight-bold;
+      }
+
+      a {
+        font-size: $font-size-p;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .logo-col {
+      img {
+        height: 40px;
+      }
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 1rem;
+
+      a i {
+        font-size: 1.5rem;
+        color: #fff;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .btn-contattami {
+      background-color: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $white-color;
+        border: 2px solid $primary-color;
+      }
+    }
+
+    .back-to-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+
+      .circle-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        text-decoration: none;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 6rem;
+    color: #aaa;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .site-footer {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .footer-col,
+      .back-to-top {
+        justify-content: center;
+        margin-bottom: 1.5rem;
+
+        .circle-btn{
+        width: 70px;
+        height: 70px;
+  }
+
+      }
+
+      .footer-socials{
+        justify-content: center;
+        gap: 2rem;
+
+        a i{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+    h2{
+    font-size: $font-size-h2m;
+  }
+
+}
