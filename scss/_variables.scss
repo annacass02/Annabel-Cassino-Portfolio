@@ -193,3 +193,20 @@ $btn-transition: background-color 0.3s ease;
     color: $primary-color;
   }
 }
+
+@media (max-width: 992px) {
+  h1{
+    font-size: $font-size-h1m;
+  }
+  h2{
+    font-size: $font-size-h2m;
+  }
+
+  h3{
+    font-size: $font-size-h3m;
+  }
+
+  h4{
+    font-size: $font-size-h4m;
+  }
+}

@@ -115,7 +115,7 @@ body{
   }
 
   /* Responsive rules */
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .nav-links,
     .cta-button.desktop-only {
       display: none;
@@ -253,7 +253,7 @@ body{
 }
 
 // Responsive
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .site-footer {
     .footer-container {
       margin: 0;
