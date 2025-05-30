@@ -119,7 +119,7 @@ p{
     font-family: "Montserrat", sans-serif;
 }
 
-// Colori per i bottoni
+// Bottoni
 $btn-bg-primary: $primary-color;
 $btn-hover-primary: $primary-color-hover;
 $btn-active-primary: $primary-color-active;
@@ -130,7 +130,7 @@ $btn-active-secondary: $secondary-color-active;
 
 
 $btn-color: $white-color;
-$btn-padding: 1rem 2rem;
+$btn-padding: 0.9rem 2rem;
 $btn-border-radius: 30px;
 $btn-font-weight: 700;
 $btn-transition: background-color 0.3s ease;
