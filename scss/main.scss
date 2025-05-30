@@ -98,7 +98,7 @@ body{
         text-decoration: none;
         color: $secondary-color;
         font-size: $font-size-p;
-        font-weight: 500;
+        font-weight: $font-weight-medium;
 
         &:hover {
           color: $primary-color;
