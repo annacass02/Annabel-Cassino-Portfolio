@@ -532,6 +532,10 @@ p {
   }
   .skill img {
     margin-right: 0.5rem;
+    width: 40px;
+  }
+  .skill .dots {
+    gap: 0.5rem;
   }
 }
 
