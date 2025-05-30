@@ -256,38 +256,52 @@ body{
 @media (max-width: 768px) {
   .site-footer {
     .footer-container {
+      margin: 0;
       flex-direction: column;
       align-items: center;
       text-align: center;
 
-      .footer-col,
-      .back-to-top {
+      .footer-col {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         margin-bottom: 1.5rem;
 
-        .circle-btn{
-        width: 70px;
-        height: 70px;
-  }
-
+        p,
+        a {
+          text-align: center;
+          width: 100%;
+        }
       }
 
-      .footer-socials{
+      .logo-col {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .footer-socials {
         justify-content: center;
         gap: 2rem;
+        margin-bottom: 0rem;
 
-        a i{
+        a i {
           font-size: 30px;
+        }
+      }
+
+      .back-to-top {
+        justify-content: center;
+        margin-bottom: 0rem;
+
+        .circle-btn {
+          width: 70px;
+          height: 70px;
         }
       }
     }
   }
-
 }
 
-@media (max-width: 768px) {
-    h2{
-    font-size: $font-size-h2m;
-  }
-
-}
