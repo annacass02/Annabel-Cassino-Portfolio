@@ -215,7 +215,9 @@ p {
 }
 .hero .hero-content .hero-text h1 {
   width: 100%;
-  font-size: 3.052rem;
+}
+.hero .hero-content .hero-text h3 {
+  color: #676767;
 }
 .hero .hero-content .hero-text p {
   margin: 1rem 0;
