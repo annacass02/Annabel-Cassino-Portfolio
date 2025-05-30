@@ -97,7 +97,7 @@ body{
       li a {
         text-decoration: none;
         color: $secondary-color;
-        font-size: 1.2rem;
+        font-size: $font-size-p;
         font-weight: 500;
 
         &:hover {
