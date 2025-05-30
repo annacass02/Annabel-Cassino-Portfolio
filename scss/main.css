@@ -339,14 +339,16 @@ p {
   .services-content .services-body {
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem 3rem;
   }
   .services-content .services-body .services-ol {
     order: 1;
+    width: 100%;
   }
   .services-content .services-body .services-image {
     order: 2;
-    margin-top: rem;
-    padding: 0 3rem;
+    padding-bottom: 2rem;
+    width: 100%;
   }
 }
 .services-content .services-li {
