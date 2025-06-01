@@ -1,4 +1,4 @@
-# 🌐 Portfolio Personale – Annabel
+# 🌐 Portfolio Personale – Annabel Cassino
 
 Benvenutə nel repository del mio sito portfolio personale, realizzato per presentare il mio percorso, le mie competenze e i progetti di Graphic e UX/UI Design.
 
