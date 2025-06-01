@@ -118,11 +118,11 @@
 
   }
   .cv-row {
-    display: flex !important;      /* Forza flex */
+    display: flex !important;      
     flex-direction: column !important;
 
     .cv-left {
-      order: -1 !important;        /* Metti prima */
+      order: -1 !important;        
       text-align: center !important;
       margin-bottom: 10px;
 

@@ -13,11 +13,10 @@
 .contact-section {
   .form-container {
     form {
-      /* default block layout */
 
       button.btn-primary {
         display: block;
-        margin: 20px auto 0 auto;  /* margine sopra + centratura orizzontale */
+        margin: 20px auto 0 auto;
         padding: 10px 30px;
         cursor: pointer;
       }
